@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [EnergyAustraliaCodingAssessment]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="FirstExecution(failed)">
+    <classes>
+      <class name="com.EnergyAustralia.Test.MusicFestival">
+        <methods>
+          <include name="validateFestivalDetails"/>
+          <include name="setUp"/>
+          <include name="validateBandDetails"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.EnergyAustralia.Test.MusicFestival -->
+    </classes>
+  </test> <!-- FirstExecution(failed) -->
+  <test thread-count="5" name="SecondExecution(failed)">
+    <classes>
+      <class name="com.EnergyAustralia.Test.MusicFestival">
+        <methods>
+          <include name="validateFestivalDetails"/>
+          <include name="setUp"/>
+          <include name="validateBandDetails"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.EnergyAustralia.Test.MusicFestival -->
+    </classes>
+  </test> <!-- SecondExecution(failed) -->
+  <test thread-count="5" name="ThirdExecution(failed)">
+    <classes>
+      <class name="com.EnergyAustralia.Test.MusicFestival">
+        <methods>
+          <include name="validateEmptyResponse"/>
+          <include name="validateFestivalDetails"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.EnergyAustralia.Test.MusicFestival -->
+    </classes>
+  </test> <!-- ThirdExecution(failed) -->
+  <test thread-count="5" name="FourthExecution(failed)">
+    <classes>
+      <class name="com.EnergyAustralia.Test.MusicFestival">
+        <methods>
+          <include name="validateEmptyResponse"/>
+          <include name="validateFestivalDetails"/>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.EnergyAustralia.Test.MusicFestival -->
+    </classes>
+  </test> <!-- FourthExecution(failed) -->
+</suite> <!-- Failed suite [EnergyAustraliaCodingAssessment] -->

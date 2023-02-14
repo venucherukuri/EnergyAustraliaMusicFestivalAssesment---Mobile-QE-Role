@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="12" passed="4" failed="8" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-02-14T13:28:08 IST" name="EnergyAustraliaCodingAssessment" finished-at="2023-02-14T13:30:03 IST" duration-ms="115412">
+    <groups>
+    </groups>
+    <test started-at="2023-02-14T13:28:08 IST" name="FirstExecution" finished-at="2023-02-14T13:28:38 IST" duration-ms="30118">
+      <class name="com.EnergyAustralia.Test.MusicFestival">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.EnergyAustralia.Test.MusicFestival@236ab296]" started-at="2023-02-14T13:28:08 IST" name="setUp" finished-at="2023-02-14T13:28:32 IST" duration-ms="24216" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateBandDetails()[pri:0, instance:com.EnergyAustralia.Test.MusicFestival@236ab296]" started-at="2023-02-14T13:28:32 IST" name="validateBandDetails" finished-at="2023-02-14T13:28:34 IST" duration-ms="2469" status="FAIL">
+          <exception class="com.EnergyAustralia.helpers.MusicFestivalDetailsNotFound">
+            <message>
+              <![CDATA[APP Throwing Exception - UI Exception is:Something went badly wrong... Cannot construct instance of `java.util.ArrayList` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('')
+ at [Source: (okhttp3.ResponseBody$BomAwareReader); line: 1, column: 1]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.EnergyAustralia.helpers.MusicFestivalDetailsNotFound: APP Throwing Exception - UI Exception is:Something went badly wrong... Cannot construct instance of `java.util.ArrayList` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('')
+ at [Source: (okhttp3.ResponseBody$BomAwareReader); line: 1, column: 1]
+at com.EnergyAustralia.Test.MusicFestival.validateBandDetails(MusicFestival.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.EnergyAustralia.helpers.MusicFestivalDetailsNotFound -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateBandDetails -->
+        <test-method signature="validateEmptyResponse()[pri:0, instance:com.EnergyAustralia.Test.MusicFestival@236ab296]" started-at="2023-02-14T13:28:34 IST" name="validateEmptyResponse" finished-at="2023-02-14T13:28:35 IST" duration-ms="678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEmptyResponse -->
+        <test-method signature="validateFestivalDetails()[pri:0, instance:com.EnergyAustralia.Test.MusicFestival@236ab296]" started-at="2023-02-14T13:28:35 IST" name="validateFestivalDetails" finished-at="2023-02-14T13:28:36 IST" duration-ms="552" status="FAIL">
+          <exception class="com.EnergyAustralia.helpers.MusicFestivalDetailsNotFound">
+            <message>
+              <![CDATA[APP Throwing Exception - UI Exception is:Unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.EnergyAustralia.helpers.MusicFestivalDetailsNotFound: APP Throwing Exception - UI Exception is:Unknown
+at com.EnergyAustralia.Test.MusicFestival.validateFestivalDetails(MusicFestival.java:52)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.EnergyAustralia.helpers.MusicFestivalDetailsNotFound -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateFestivalDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.EnergyAustralia.Test.MusicFestival@236ab296]" started-at="2023-02-14T13:28:36 IST" name="tearDown" finished-at="2023-02-14T13:28:38 IST" duration-ms="2036" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.EnergyAustralia.Test.MusicFestival -->
+    </test> <!-- FirstExecution -->
+    <test started-at="2023-02-14T13:28:38 IST" name="SecondExecution" finished-at="2023-02-14T13:29:08 IST" duration-ms="29747">
+      <class name="com.EnergyAustralia.Test.MusicFestival">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.EnergyAustralia.Test.MusicFestival@1532c619]" started-at="2023-02-14T13:28:38 IST" name="setUp" finished-at="2023-02-14T13:29:01 IST" duration-ms="22995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateBandDetails()[pri:0, instance:com.EnergyAustralia.Test.MusicFestival@1532c619]" started-at="2023-02-14T13:29:01 IST" name="validateBandDetails" finished-at="2023-02-14T13:29:04 IST" duration-ms="2802" status="FAIL">
+          <exception class="com.EnergyAustralia.helpers.MusicFestivalDetailsNotFound">
+            <message>
+              <![CDATA[APP Throwing Exception - UI Exception is:Something went badly wrong... Cannot construct instance of `java.util.ArrayList` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('')
+ at [Source: (okhttp3.ResponseBody$BomAwareReader); line: 1, column: 1]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.EnergyAustralia.helpers.MusicFestivalDetailsNotFound: APP Throwing Exception - UI Exception is:Something went badly wrong... Cannot construct instance of `java.util.ArrayList` (although at least one Creator exists): no String-argument constructor/factory method to deserialize from String value ('')
+ at [Source: (okhttp3.ResponseBody$BomAwareReader); line: 1, column: 1]
+at com.EnergyAustralia.Test.MusicFestival.validateBandDetails(MusicFestival.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.EnergyAustralia.helpers.MusicFestivalDetailsNotFound -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateBandDetails -->
+        <test-method signature="validateEmptyResponse()[pri:0, instance:com.EnergyAustralia.Test.MusicFestival@1532c619]" started-at="2023-02-14T13:29:04 IST" name="validateEmptyResponse" finished-at="2023-02-14T13:29:04 IST" duration-ms="579" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEmptyResponse -->
+        <test-method signature="validateFestivalDetails()[pri:0, instance:com.EnergyAustralia.Test.MusicFestival@1532c619]" started-at="2023-02-14T13:29:04 IST" name="validateFestivalDetails" finished-at="2023-02-14T13:29:06 IST" duration-ms="1325" status="FAIL">
+          <exception class="com.EnergyAustralia.helpers.MusicFestivalDetailsNotFound">
+            <message>
+              <![CDATA[APP Throwing Exception - UI Exception is:Unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.EnergyAustralia.helpers.MusicFestivalDetailsNotFound: APP Throwing Exception - UI Exception is:Unknown
+at com.EnergyAustralia.Test.MusicFestival.validateFestivalDetails(MusicFestival.java:52)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.EnergyAustralia.helpers.MusicFestivalDetailsNotFound -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateFestivalDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.EnergyAustralia.Test.MusicFestival@1532c619]" started-at="2023-02-14T13:29:06 IST" name="tearDown" finished-at="2023-02-14T13:29:08 IST" duration-ms="2034" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.EnergyAustralia.Test.MusicFestival -->
+    </test> <!-- SecondExecution -->
+    <test started-at="2023-02-14T13:29:08 IST" name="ThirdExecution" finished-at="2023-02-14T13:29:37 IST" duration-ms="28916">
+      <class name="com.EnergyAustralia.Test.MusicFestival">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.EnergyAustralia.Test.MusicFestival@208e9ef6]" started-at="2023-02-14T13:29:08 IST" name="setUp" finished-at="2023-02-14T13:29:31 IST" duration-ms="23765" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateBandDetails()[pri:0, instance:com.EnergyAustralia.Test.MusicFestival@208e9ef6]" started-at="2023-02-14T13:29:31 IST" name="validateBandDetails" finished-at="2023-02-14T13:29:34 IST" duration-ms="2937" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateBandDetails -->
+        <test-method signature="validateEmptyResponse()[pri:0, instance:com.EnergyAustralia.Test.MusicFestival@208e9ef6]" started-at="2023-02-14T13:29:34 IST" name="validateEmptyResponse" finished-at="2023-02-14T13:29:35 IST" duration-ms="383" status="FAIL">
+          <exception class="com.EnergyAustralia.helpers.MusicFestivalDetailsNotFound">
+            <message>
+              <![CDATA[APP Throwing Exception - UI Exception is:Response wasn't successful or data empty. Response code: 429]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.EnergyAustralia.helpers.MusicFestivalDetailsNotFound: APP Throwing Exception - UI Exception is:Response wasn't successful or data empty. Response code: 429
+at com.EnergyAustralia.Test.MusicFestival.validateEmptyResponse(MusicFestival.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.EnergyAustralia.helpers.MusicFestivalDetailsNotFound -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEmptyResponse -->
+        <test-method signature="validateFestivalDetails()[pri:0, instance:com.EnergyAustralia.Test.MusicFestival@208e9ef6]" started-at="2023-02-14T13:29:35 IST" name="validateFestivalDetails" finished-at="2023-02-14T13:29:35 IST" duration-ms="387" status="FAIL">
+          <exception class="com.EnergyAustralia.helpers.MusicFestivalDetailsNotFound">
+            <message>
+              <![CDATA[APP Throwing Exception - UI Exception is:Unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.EnergyAustralia.helpers.MusicFestivalDetailsNotFound: APP Throwing Exception - UI Exception is:Unknown
+at com.EnergyAustralia.Test.MusicFestival.validateFestivalDetails(MusicFestival.java:52)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.EnergyAustralia.helpers.MusicFestivalDetailsNotFound -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateFestivalDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.EnergyAustralia.Test.MusicFestival@208e9ef6]" started-at="2023-02-14T13:29:35 IST" name="tearDown" finished-at="2023-02-14T13:29:37 IST" duration-ms="1434" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.EnergyAustralia.Test.MusicFestival -->
+    </test> <!-- ThirdExecution -->
+    <test started-at="2023-02-14T13:29:37 IST" name="FourthExecution" finished-at="2023-02-14T13:30:03 IST" duration-ms="26417">
+      <class name="com.EnergyAustralia.Test.MusicFestival">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.EnergyAustralia.Test.MusicFestival@907f2b7]" started-at="2023-02-14T13:29:37 IST" name="setUp" finished-at="2023-02-14T13:29:59 IST" duration-ms="22041" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateBandDetails()[pri:0, instance:com.EnergyAustralia.Test.MusicFestival@907f2b7]" started-at="2023-02-14T13:29:59 IST" name="validateBandDetails" finished-at="2023-02-14T13:30:01 IST" duration-ms="1896" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateBandDetails -->
+        <test-method signature="validateEmptyResponse()[pri:0, instance:com.EnergyAustralia.Test.MusicFestival@907f2b7]" started-at="2023-02-14T13:30:01 IST" name="validateEmptyResponse" finished-at="2023-02-14T13:30:01 IST" duration-ms="692" status="FAIL">
+          <exception class="com.EnergyAustralia.helpers.MusicFestivalDetailsNotFound">
+            <message>
+              <![CDATA[APP Throwing Exception - UI Exception is:Response wasn't successful or data empty. Response code: 429]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.EnergyAustralia.helpers.MusicFestivalDetailsNotFound: APP Throwing Exception - UI Exception is:Response wasn't successful or data empty. Response code: 429
+at com.EnergyAustralia.Test.MusicFestival.validateEmptyResponse(MusicFestival.java:30)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.EnergyAustralia.helpers.MusicFestivalDetailsNotFound -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateEmptyResponse -->
+        <test-method signature="validateFestivalDetails()[pri:0, instance:com.EnergyAustralia.Test.MusicFestival@907f2b7]" started-at="2023-02-14T13:30:01 IST" name="validateFestivalDetails" finished-at="2023-02-14T13:30:02 IST" duration-ms="460" status="FAIL">
+          <exception class="com.EnergyAustralia.helpers.MusicFestivalDetailsNotFound">
+            <message>
+              <![CDATA[APP Throwing Exception - UI Exception is:Unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.EnergyAustralia.helpers.MusicFestivalDetailsNotFound: APP Throwing Exception - UI Exception is:Unknown
+at com.EnergyAustralia.Test.MusicFestival.validateFestivalDetails(MusicFestival.java:52)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.EnergyAustralia.helpers.MusicFestivalDetailsNotFound -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateFestivalDetails -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.EnergyAustralia.Test.MusicFestival@907f2b7]" started-at="2023-02-14T13:30:02 IST" name="tearDown" finished-at="2023-02-14T13:30:03 IST" duration-ms="1314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.EnergyAustralia.Test.MusicFestival -->
+    </test> <!-- FourthExecution -->
+  </suite> <!-- EnergyAustraliaCodingAssessment -->
+</testng-results>
